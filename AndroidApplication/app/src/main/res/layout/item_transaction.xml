@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/textName"
+        style="@style/TextViewStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/textDate"
+        style="@style/TextViewStyle"
+        android:layout_below="@+id/textName"
+        tools:text="29.05.2017" />
+
+    <TextView
+        android:id="@+id/textSum"
+        style="@style/TextViewStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        tools:text="30000" />
+</RelativeLayout>
