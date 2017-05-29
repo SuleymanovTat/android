@@ -22,7 +22,6 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
     private ClickListener clickListener;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy", Locale.getDefault());
 
-
     public TransactionAdapter(Context context, ArrayList<Transactions> listTransitions) {
         this.context = context;
         this.listTransitions = listTransitions;
@@ -54,7 +53,6 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         }
         return listTransitions.size();
     }
-
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
