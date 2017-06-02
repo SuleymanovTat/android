@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Android Application</string>
     <string name="hello_android">Hello Android!</string>
+    <string name="name">Имя</string>
+    <string name="send">Отправить</string>
+    <string name="empty_name">Имя пустое</string>
 </resources>
