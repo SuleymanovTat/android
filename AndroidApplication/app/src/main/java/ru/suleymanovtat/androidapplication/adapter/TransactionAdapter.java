@@ -1,7 +1,7 @@
 package ru.suleymanovtat.androidapplication.adapter;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,11 +39,11 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         viewHolder.textName.setText(transactions.getName());
         viewHolder.textDate.setText(dateFormat.format(transactions.getDate()));
         viewHolder.textSum.setText(String.valueOf(transactions.getSum()));
-        if (position % 2 == 0) {
-            viewHolder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
-        } else {
-            viewHolder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.colorAccent));
-        }
+//        if (position % 2 == 0) {
+//            viewHolder.cardView.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
+//        } else {
+//            viewHolder.cardView.setBackgroundColor(ContextCompat.getColor(context, R.color.colorAccent));
+//        }
     }
 
     @Override
@@ -59,12 +59,14 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         private TextView textName;
         private TextView textDate;
         private TextView textSum;
+        private CardView cardView;
 
         ViewHolder(View itemView) {
             super(itemView);
             textName = (TextView) itemView.findViewById(R.id.textName);
             textDate = (TextView) itemView.findViewById(R.id.textDate);
             textSum = (TextView) itemView.findViewById(R.id.textSum);
+            cardView = (CardView) itemView.findViewById(R.id.cardView);
             itemView.setOnClickListener(this);
         }
 
