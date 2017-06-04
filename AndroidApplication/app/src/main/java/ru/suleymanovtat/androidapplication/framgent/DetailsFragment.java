@@ -25,7 +25,10 @@ public class DetailsFragment extends BaseFragment implements View.OnClickListene
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar_details);
         toolbar.setTitle(R.string.details);
         toolbar.setNavigationIcon(R.drawable.ic_black);
-        toolbar.setNavigationOnClickListener(v -> getActivity().onBackPressed());
+        toolbar.setNavigationOnClickListener(v -> {
+            hideKeyboard();
+            getActivity().onBackPressed();
+        });
         editName = (EditText) view.findViewById(R.id.editName);
         Button btnSend = (Button) view.findViewById(R.id.btnSend);
         btnSend.setOnClickListener(this);
