@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFF</color>
+    <color name="colorPrimaryFab">#F44782</color>
+    <color name="colorRippleFab">#F06292</color>
+    <color name="colorAccentPressedFab">#C2185B</color>
 </resources>

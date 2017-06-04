@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.melnykov.fab.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -28,6 +30,7 @@ public class TransactionFragment extends BaseFragment implements TransactionAdap
         View view = inflater.inflate(R.layout.fragment_transaction, container, false);
         toolbar(view, R.string.waste, R.drawable.ic_menu);
         textName = (TextView) view.findViewById(R.id.textName);
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
         RecyclerView listTransactionView = (RecyclerView) view.findViewById(R.id.listTransaction);
         listTransactionView.setLayoutManager(new LinearLayoutManager(getActivity()));
         //формируем список Transaction
@@ -35,6 +38,7 @@ public class TransactionFragment extends BaseFragment implements TransactionAdap
         for (int i = 0; i < 20; i++) {
             listTransactions.add(new Transactions("Name " + i, 1000 * i, new Date()));
         }
+        fab.attachToRecyclerView(listTransactionView);
         TransactionAdapter transactionAdapter = new TransactionAdapter(getActivity(), listTransactions);
         listTransactionView.setAdapter(transactionAdapter);
         transactionAdapter.setOnItemClickListener(this);

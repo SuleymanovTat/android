@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/padding">
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="@color/colorWhite"
+    card_view:cardUseCompatPadding="true">
 
-    <TextView
-        android:id="@+id/textName"
-        style="@style/TextViewStyle"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        tools:text="Name" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
 
-    <TextView
-        android:id="@+id/textDate"
-        style="@style/TextViewStyle"
-        android:layout_below="@+id/textName"
-        tools:text="29.05.2017" />
+        <TextView
+            android:id="@+id/textName"
+            style="@style/TextViewStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            tools:text="Name" />
 
-    <TextView
-        android:id="@+id/textSum"
-        style="@style/TextViewStyle"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        tools:text="30000" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textDate"
+            style="@style/TextViewStyle"
+            android:layout_below="@+id/textName"
+            tools:text="29.05.2017" />
+
+        <TextView
+            android:id="@+id/textSum"
+            style="@style/TextViewStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="30000" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
