@@ -2,20 +2,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/margin"
+    android:background="@color/colorWhite"
     tools:context="ru.suleymanovtat.androidapplication.framgent.DetailsFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
 
     <EditText
         android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar_details"
         android:ems="10"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         android:maxLines="1"
-        android:minLines="1"
-        android:hint="@string/name" />
+        android:minLines="1" />
 
     <Button
         android:id="@+id/btnSend"
