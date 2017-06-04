@@ -4,4 +4,15 @@
     <string name="name">Имя</string>
     <string name="send">Отправить</string>
     <string name="empty_name">Имя пустое</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="waste">Траты</string>
+    <string name="categories">Категории</string>
+    <string name="statistics">Статистика</string>
+    <string name="image">image</string>
+    <string name="android_studio">Android Studio</string>
+    <string name="android_studio_android_com">android.studio@android.com</string>
+    <string name="details">Детали</string>
+    <string name="here_there_will_be_statistics">Здесь будет статистика</string>
+
 </resources>
