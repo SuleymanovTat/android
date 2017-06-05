@@ -13,11 +13,19 @@
         android:title="@string/waste" />
 
     <TextView
-        android:id="@+id/textName"
+        android:id="@+id/textMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
         android:text="@string/here_there_will_be_statistics" />
+
+    <Button
+        android:id="@+id/btnExampleActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMessage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/example_activity" />
 
 </RelativeLayout>

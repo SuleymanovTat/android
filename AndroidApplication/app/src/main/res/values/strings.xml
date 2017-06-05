@@ -14,5 +14,12 @@
     <string name="android_studio_android_com">android.studio@android.com</string>
     <string name="details">Детали</string>
     <string name="here_there_will_be_statistics">Здесь будет статистика</string>
+    <string name="title_activity_example">Пример</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Панель приборов</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="example_activity">Пример Activity</string>
+    <string name="next_activity">Cледующий activity</string>
+    <string name="transition_main_activity">Переход в MainActivity</string>
 
 </resources>
