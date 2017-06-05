@@ -40,6 +40,7 @@
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/margin"
             android:src="@drawable/ic_fab"
+            tools:ignore="MissingPrefix"
             fab:fab_colorNormal="@color/colorPrimaryFab"
             fab:fab_colorPressed="@color/colorAccentPressedFab"
             fab:fab_colorRipple="@color/colorRippleFab" />
